@@ -10,34 +10,38 @@
 
         <a href="index.html"><b>Volver al index</b></a>
 
-        <form>
+        <form action="registro-formulario.html"
+            method="post">
 
             <label>Nombre:</label>
             <input type="text" 
-                maxlength="5">
+                maxlength="20"
+                name="Nombre">
             
             <label>Contraseña:</label>
             <input type="password"
-                maxlength="4"
-                size="4">
+                maxlength="20"
+                size="4"
+                name="Clave">
             <input type="submit"
                 value="Enviar">
 
         </form>
 
         <h1>Formulario 2</h1>   
-        
             
-
-        <form>
+        <form action="registro-formulario.html"
+            method="post">
             
             <label>Opcion1</label>
             <input type="checkbox"
-                value="MUSICA">
+                value="MUSICA"
+                name="checkbox1">
 
             <label>Opcion2</label>
             <input type="checkbox"
-                value="Series">
+                value="Series"
+                name="checkbox2">
 
             <br>
             <br>
@@ -45,13 +49,51 @@
             <label>Opcion A</label>
             <input type="radio" 
                 value="A"
-                name="opciones">
+                name="opciones"
+                name="checkbox3">
             <label>Opcion B</label>
             <input type="radio" 
                 value="B"
-                name="opciones">
-                
+                name="opciones"
+                name="checkbox4">
+
+            <input type="submit" value="Enviar">
         </form>
 
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        Nombre:
+                    </td>
+                    <td>
+                        <input name="nombre" 
+                        type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fec.Nac:
+                    </td>
+                    <td>
+                        <input name="nombre" 
+                        type="date"
+                        max="2022-09-24">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Edad:
+                    </td>
+                    <td>
+                        <input name="nombre" 
+                        type="number"
+                        min="1"
+                        max="100"
+                        step="2">
+                    </td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>
