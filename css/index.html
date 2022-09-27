@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 1- forma de usar css interna-->
+    <style>
+        /*esto es un comentario*/
+        p {
+            color:green;
+            font-size: 23px;
+
+            /*estructura
+            selector{
+                propiedad: valor
+            }
+            */
+        }
+        section{
+            background-color: yellow;
+        }
+        #btn{
+            background-color: aqua;
+        }
+
+    </style>
+    <!--3 forma: externa-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <main>
+        <!-- forma en linea 
+        usando el atributo style-->
+        <section class="sectionPrincipal">
+
+            <h1 style="color:rgb(174, 0, 255)">CSS</h1>
+            <h2>SubTitulo</h2>
+            <p style="font-weight: bolder;">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis architecto quis sunt excepturi optio aspernatur blanditiis tenetur mollitia. Corporis cumque assumenda inventore quod quae error deleniti similique quis officiis maxime!
+            </p>
+
+        </section>
+
+        <section>
+            <form action="alta.html">
+
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" 
+                type="text" 
+                maxlength="50" 
+                required>
+
+                <button id="btn">
+
+                    Enviar
+
+                </button>
+
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
